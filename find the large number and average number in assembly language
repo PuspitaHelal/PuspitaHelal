@@ -1,0 +1,55 @@
+INCLUDE 'EMU8086.INC'  
+ 
+org 100h
+.model small
+.data
+  arr db 9, 4, 3, 6, 1
+  sum db 0
+  count db 5
+.code
+main proc
+    mov ax, @data
+    mov ds, ax
+
+    mov si, offset arr
+    mov cx, 5
+    mov bl, [si]
+
+    LoopA:
+    cmp [si], bl
+    jge larger
+    
+
+    larger:
+    inc si
+    loop LoopA
+
+    print "Largest value in array: "
+    mov dl, bl
+    add dl, 48
+    mov ah, 2
+    int 21h
+
+    calculateAverage:
+    mov si, offset arr
+    mov cx, 5
+    xor ax, ax
+    xor bx, bx
+
+    CalculateSum:
+    add al, [si]
+    inc si
+    loop CalculateSum
+
+    mov bl, 5  ; Set the divisor to 5
+    div bl
+
+    print "Average value in array: "
+    mov dl, al
+    add dl, 48
+    mov ah, 2
+    int 21h
+
+    main endp
+
+ret

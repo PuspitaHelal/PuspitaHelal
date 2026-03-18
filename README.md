@@ -109,14 +109,16 @@ Passionate about building scalable web applications, solving algorithmic problem
 
 ---
 
+
+
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=PuspitaHelal&show_icons=true&theme=tokyonight&hide=c" />
+  <img src="https://github-readme-stats.vercel.app/api?username=PuspitaHelal&show_icons=true&theme=tokyonight" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=PuspitaHelal&theme=tokyonight&hide=c" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=PuspitaHelal&layout=compact&theme=tokyonight&hide=c" />
 </p>
 ---
 
